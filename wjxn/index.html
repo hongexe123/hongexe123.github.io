@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>《Crisis：危机2015》官方网站??网易首款FPS全新世代大作</title>
+    <meta name="keywords" content="代号F,网易FPS,次世代FPS,危机2015,网易射击网游,最新射击网游" />
+    <meta name="description" content="Crisis，危机2015，网易首款FPS大作，专业尖端3D引擎Dynamite，高级光照渲染，SSAO空间环境光遮蔽技术，可视粒子特效系统，FPS全新世代！" />
+    <meta name="author" content="网易，NetEase Inc." />
+    <meta name="copyright" content="网易，NetEase Inc." />
+    <link rel="dns-prefetch" href="http://res.nie.netease.com">
+    <link type="text/css" charset="gb2312" rel="stylesheet" href="css/page.css" media="all" />
+    <script charset="gb2312" src="http://res.nie.netease.com/comm/js/jquery(mixNIE).last.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://res.nie.netease.com/comm/html5/html5shiv.js"></script>
+    <![endif]-->
+    <!--底部版权颜色变灰，如果正常，则去掉以下-->
+    <script>nie.config.copyRight.setGray();</script>
+</head>
+<body>
+<!--SEO start-->
+<h1 class="hide">《Crisis：危机2015》官方网站??网易首款FPS全新世代大作</h1>
+<!--SEO start-->
+<!--分享文案 start-->
+<div class="sharetxt hide"></div>
+<div class="shareimg hide"></div>
+<!--分享文案 end-->
+
+<div id="NIE-topBar"></div>
+<a id="previous"><div class="previoushov"></div></a>
+<a id="next"><div class="nexthov"></div></a>
+<div id="wrap">
+    <img src="img/bg1.jpg" alt="" class="wrapbg" style="opacity: 1;filter:alpha(opacity=100)"/>
+    <div id="wrap1">
+        <div class="main">
+            <section class="cont">
+                <header>
+                    <a id="logo" href="http://wj.163.com/" target="_blank" title="危机官网" class="g-thide">危机官网</a>
+                    <div id="share"></div>
+                    <a id="music-btn" class="play"><span class="line"></span></a>
+                </header>
+                <article id="title">
+                    <img class="title1" src="img/title1.png" alt="" />
+                </article>
+            </section>
+        </div>
+    </div>
+</div>
+<!--尾部-->
+<footer>
+    <div class="main">
+        <div id="NIE-copyRight"></div>
+    </div>
+</footer>
+<div id="NIE-overlayer"></div>
+<!--普通弹层-->
+<div class="dTc" id="popbox" style="display:none">
+    <h3>请查收短信<strong>完整填写手机验证码</strong></h3>
+    <a class="aCloseQ" href="javascript:void(0)"></a>
+    <p>感谢您的支持！</p>
+    <a class="pbtn">返回</a>
+</div>
+
+<div class="dTc" id="popbox2" style="display:none">
+    <h3>您已成功预约<strong>《危机2015》8月英雄首测</strong></h3>
+    <a class="aCloseQ" href="javascript:void(0)"></a>
+    <p>感谢您的支持！</p>
+    <a class="pbtn">返回</a>
+</div>
+<script charset="gb2312" src="js/com.js"></script>
+<script type="text/javascript">
+    function validPhone(num) {
+        if (/^(13|14|15|18)\d{9}$/.test(num)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    $('#popbtn').click(function () {
+        var pnum = $("#telnum").val();
+
+        if (!validPhone(pnum)) {
+            alert("手机号码有误，请填写正确！");
+        } else {
+            collectPho(pnum);
+        }
+    });
+
+    function collectPho(phone) {
+        var os = 'ios';
+        if (/android/i.test(navigator.userAgent.toLowerCase())) {
+            os = 'android';
+        }
+        $.ajax({
+            url: "http://mobile-game-appoint.webapp.163.com/appoint/wj/" + phone,
+            async: false,
+            dataType: "jsonp",
+            success: function (result) {
+                if (result.status == "ok") {
+                    alert("验证码发送成功，请注意短信！");
+
+                } else {
+                    alert(result.status);
+                }
+            }
+        });
+    }
+
+
+    $('#txyz').click(function () {
+        var pnum = $("#phone").val();
+        var yzm = $("#yzm").val();
+
+        collectCode("txhd", pnum, yzm);
+    });
+
+    function collectCode(game_name, phone, authcode) {
+        var os = 'ios';
+        if (/android/i.test(navigator.userAgent.toLowerCase())) {
+            os = 'android';
+        }
+        $.ajax({
+            url: "http://mobile-game-appoint.webapp.163.com/appoint_submit_authcode/" + game_name + "/" + phone + "/" + os + "/?auth_code=" + authcode,
+            async: false,
+            dataType: "jsonp",
+            success: function (result) {
+                if (result.status == "ok") {
+                    $("#pop3").show();
+					$("#pop1").hide();
+                } else {
+                    alert(result.status);
+                }
+            }
+        });
+    }
+</script>
+
+<div id="music"></div>
+</body>
+</html>
