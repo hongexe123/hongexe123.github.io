@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="dns-prefetch" href="http://res.nie.netease.com">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="telephone=no" name="format-detection"/>
+
+<script charset="gb2312" src="http://res.nie.netease.com/comm/js/jquery(mixNIE).last.js"></script>    
+<script src="js/sapp.js" type="text/javascript" charset="gb2312"></script>
+<script src="js/com.js" type="text/javascript" charset="gb2312"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<title>待定</title>
+<meta name="keywords" content="待定" />
+<meta name="description" content="待定" />
+<meta name="robots" content="all" />
+<meta name="author" content="网易，NetEase Inc." />
+<meta name="copyright" content="网易，NetEase Inc." />
+<meta name="pmid" content="" />
+<meta name="editor" content="hzxiaqiaoling" />
+<meta name="designer" content="xiaowu" />
+<meta name="front-end technicist" content="jiaopi" />
+
+<!--分享-->
+<meta name="shareTitle" content="分享标题"/>
+<meta name="shareDesc" content="哎呀,谁来踢踢我的屁股呀? - [居然不玩游戏就立刻分享的默认分享文案]"/>
+<meta name="shareImg" content="images/share.jpg"/>
+<script>
+var hitAudio = $.extend(new Audio("audio/hit.wav"),{preload:true});
+var wordLib = ["屌丝","萌萌哒","逗比","没吃药","宅基腐","脑残","傲娇","nozuonodie","壕","杀马特","中二病","怪蜀黍","腹黑"];
+var shareTxt = "<b>{victim}</b>因为<b>{reason}</b>被你踢飞<b>{score}</b>米，脚力不错哟，快分享告诉好友吧！";
+</script>
+
+</head>
+
+<body>
+
+<div id="wrap">
+
+  <div id="loading" class="in"><b></b><span>loading</span></div>
+
+  <!--页面1-->
+  <section class="page" id="game">
+    <div id="bg"></div>
+    <div class="main">
+	  <!--界面2-选择start-->
+	  <div id="ready" class="full">
+	    <div class="rules full">
+	      <div class="hide">踢屁股指南</div>
+	      <div class="hide">踢飞米数由角度和力度同时决定噢<br>点击瞬间,指针指向的数值代表踢出的力度<br>点击屁股不同位置,决定踢出的角度</div>
+	      <div class="hide">快来试试吧!</div>
+	    </div>
+	    <div class="boat full">
+		  <div class="man full"></div>
+		  <div class="flash full"></div>
+		  <div class="foot full"></div>
+		</div>
+		<div id="power" class="full"><div class="handle"></div></div>
+		<div id="hit">
+		  <a href="javascript:;"></a>
+		  <a href="javascript:;"></a>
+		  <a href="javascript:;"></a>
+		  <a href="javascript:;"></a>
+		</div>
+	  </div>
+	  <!--界面2-选择end-->
+	  <!--界面3-过程动画start-->
+	  <div id="fly" class="full">
+	    <div id="poorMan" class="full"><span></span><b>??</b></div>
+		<div id="shark" class="full"></div>
+	  </div>
+	  <!--界面3-过程动画end-->
+	</div>
+	
+	  <!--界面1-选择start-->
+	  <div id="popVictim" class="pop">
+	    <div class="popClose"></div>
+		<input id="victim" type="text" placeholder="请输入你想踢的人的名字" maxlength="8"/>
+		<fieldset id="reason">
+		  <legend>*选择理由</legend>
+		  <label><input name="reason" type="radio"/><span></span></label>
+		  <label><input name="reason" type="radio"/><span></span></label>
+		  <label><input name="reason" type="radio"/><span></span></label>
+		  <label><input name="reason" type="radio"/><span></span></label>
+		  <label><input name="reason" type="radio"/><span></span></label>
+		  <label><input name="reason" type="radio"/><span></span></label>
+		</fieldset>
+		<input id="btnSure" type="button" value="确定"/>
+	  </div>
+	  <!--界面1-选择end-->
+	  <!--界面4-结果start-->
+	  <div id="result" class="full">
+	    <div id="popResult" class="pop">
+	      <div class="popClose"></div>
+		  <p id="resultTxt"></p>
+		  <div class="btnLine">
+		    <a class="replay" href="javascript:;">再踢一次</a>
+		    <a class="share" href="javascript:;">分享至朋友圈</a>
+		  </div>
+		</div>
+	  </div>
+	  <!--界面4-结果end-->
+
+  </section>
+
+  <!--控件层-->
+  <aside id="aside">
+    <div class="main">
+	</div>
+	<div id="logo"></div>
+	<div id="shareHint">
+      <span></span>
+	</div>
+  </aside>
+
+</div>
+
+
+</body>
+</html>
