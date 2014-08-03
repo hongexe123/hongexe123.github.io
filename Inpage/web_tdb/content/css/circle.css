@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* CSS Document */
+
+.alreadyright{
+	position:absolute;
+	margin-left:750px;
+	top:147px;
+	zoom:1;
+	width:155px;
+	height:155px;
+	background-image:url(../images/bigcircle.png);
+	background-position:-10px -13px;
+	text-align:center;
+	}
+.circle1{
+	background-position:-175px -13px;
+	}
+.circle2{
+	background-position:-175px -13px;
+	}
+.circle3{
+	background-position:-340px -13px;
+	}
+.circle4{
+	background-position:-340px -13px;
+	}
+.circle5{
+	background-position:-505px -13px;
+	}
+.circle6{
+	background-position:-505px -13px;
+	}
+.circle7{
+	background-position:-670px -13px;
+	}
+.circle8{
+	background-position:-670px -13px;
+	}
+.circle9{
+	background-position:-835px -13px;
+	}
+.circle10{
+	background-position:-835px -13px;
+	}
+.circle11{
+	background-position:-1000px -13px;
+	}
+.circle12{
+	background-position:-1000px -13px;
+	}
+.circle13{
+	background-position:-1165px -13px;
+	}
+.circle14{
+	background-position:-1165px -13px;
+	}
+.circle15{
+	background-position:-1330px -13px;
+	}
+.circle16{
+	background-position:-1330px -13px;
+	}
+.circle17{
+	background-position:-1495px -13px;
+	}
+.circle18{
+	background-position:-1495px -13px;
+	}
+.circle19{
+	background-position:-1660px -13px;
+	}
+.circle20{
+	background-position:-1660px -13px;
+	}
+.circle21{
+	background-position:-1825px -13px;
+	}
+.circle22{
+	background-position:-1825px -13px;
+	}
+.circle23{
+	background-position:-1990px -13px;
+	}
+.circle24{
+	background-position:-1990px -13px;
+	}
+.circle25{
+	background-position:-2155px -13px;
+	}
+.circle26{
+	background-position:-2155px -13px;
+	}
+.circle27{
+	background-position:-2320px -13px;
+	}
+.circle28{
+	background-position:-2320px -13px;
+	}
+.circle29{
+	background-position:-2485px -13px;
+	}
+.circle30{
+	background-position:-2485px -13px;
+	}
+.circle31{
+	background-position:-2650px -13px;
+	}
+.circle32{
+	background-position:-2650px -13px;
+	}
+.circle33{
+	background-position:-2815px -13px;
+	}
+.circle34{
+	background-position:-2815px -13px;
+	}
+.circle35{
+	background-position:-2980px -13px;
+	}
+.circle36{
+	background-position:-2980px -13px;
+	}
+.circle37{
+	background-position:-3145px -13px;
+	}
+.circle38{
+	background-position:-3145px -13px;
+	}
+.circle39{
+	background-position:-3310px -13px;
+	}
+.circle40{
+	background-position:-3310px -13px;
+	}
+.circle41{
+	background-position:-3475px -13px;
+	}
+.circle42{
+	background-position:-3475px -13px;
+	}
+.circle43{
+	background-position:-3640px -13px;
+	}
+.circle44{
+	background-position:-3640px -13px;
+	}
+.circle45{
+	background-position:-3805px -13px;
+	}
+.circle46{
+	background-position:-3805px -13px;
+	}
+.circle47{
+	background-position:-3970px -13px;
+	}
+.circle48{
+	background-position:-3970px -13px;
+	}
+.circle49{
+	background-position:-4135px -13px;
+	}
+.circle50{
+	background-position:-4135px -13px;
+	}
+.circle51{
+	background-position:-4300px -13px;
+	}
+.circle52{
+	background-position:-4300px -13px;
+	}
+.circle53{
+	background-position:-4465px -13px;
+	}
+.circle54{
+	background-position:-4465px -13px;
+	}
+.circle55{
+	background-position:-4630px -13px;
+	}
+.circle56{
+	background-position:-4630px -13px;
+	}
+.circle57{
+	background-position:-4795px -13px;
+	}
+.circle58{
+	background-position:-4795px -13px;
+	}
+.circle59{
+	background-position:-4960px -13px;
+	}
+.circle60{
+	background-position:-4960px -13px;
+	}
+.circle61{
+	background-position:-5125px -13px;
+	}
+.circle62{
+	background-position:-5125px -13px;
+	}
+.circle63{
+	background-position:-5290px -13px;
+	}
+.circle64{
+	background-position:-5290px -13px;
+	}
+.circle65{
+	background-position:-5455px -13px;
+	}
+.circle66{
+	background-position:-5455px -13px;
+	}
+.circle67{
+	background-position:-5620px -13px;
+	}
+.circle68{
+	background-position:-5620px -13px;
+	}
+.circle69{
+	background-position:-5785px -13px;
+	}
+.circle70{
+	background-position:-5785px -13px;
+	}
+.circle71{
+	background-position:-5950px -13px;
+	}
+.circle72{
+	background-position:-5950px -13px;
+	}
+.circle73{
+	background-position:-6115px -13px;
+	}
+.circle74{
+	background-position:-6115px -13px;
+	}
+.circle75{
+	background-position:-6280px -13px;
+	}
+.circle76{
+	background-position:-6280px -13px;
+	}
+.circle77{
+	background-position:-6445px -13px;
+	}
+.circle78{
+	background-position:-6445px -13px;
+	}
+.circle79{
+	background-position:-6610px -13px;
+	}
+.circle80{
+	background-position:-6610px -13px;
+	}
+.circle81{
+	background-position:-6775px -13px;
+	}
+.circle82{
+	background-position:-6775px -13px;
+	}
+.circle83{
+	background-position:-6940px -13px;
+	}
+.circle84{
+	background-position:-6940px -13px;
+	}
+.circle85{
+	background-position:-7105px -13px;
+	}
+.circle86{
+	background-position:-7105px -13px;
+	}
+.circle87{
+	background-position:-7270px -13px;
+	}
+.circle88{
+	background-position:-7270px -13px;
+	}
+.circle89{
+	background-position:-7435px -13px;
+	}
+.circle90{
+	background-position:-7435px -13px;
+	}
+.circle91{
+	background-position:-7600px -13px;
+	}
+.circle92{
+	background-position:-7600px -13px;
+	}
+.circle93{
+	background-position:-7765px -13px;
+	}
+.circle94{
+	background-position:-7765px -13px;
+	}
+.circle95{
+	background-position:-7930px -13px;
+	}
+.circle96{
+	background-position:-7930px -13px;
+	}
+.circle97{
+	background-position:-8095px -13px;
+	}
+.circle98{
+	background-position:-8095px -13px;
+	}
+.circle99{
+	background-position:-8260px -13px;
+	}
+.circle100{
+	background-position:-8260px -13px;
+	}
