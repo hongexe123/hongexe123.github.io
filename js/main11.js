@@ -51,7 +51,7 @@ $(".showmore").click(function(){
 		$("#newsContent").fadeIn();
 		return false;
 	});
-	$('.close-btn').click(function(){
+	$('.close-btn, #overlay').click(function(){
 		$('#newsContent').fadeOut();
 		$("#overlay").fadeOut();
 	});
