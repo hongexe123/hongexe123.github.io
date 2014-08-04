@@ -1816,12 +1816,6 @@ table th[class*="col-"] {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch;
   }
-#skill_sm{
-	display:block;
-	}
-#skill_lg{
-	display:none;
-	}
 #serlist_sm{
 	  display:block;
 	  }
@@ -1863,7 +1857,10 @@ h2{
 .mt50 { margin-top:5px !important; }
 
 .myinfo{
-	position:relative; margin-left:20px;
+	position:relative;
+	}
+.myinfo p{
+	text-align:center;line-height:25px; color:#c7f0e1 !important;
 	}
 .self{
 	font-size:1em; line-height:25px; margin-top:10px;
@@ -2238,11 +2235,8 @@ textarea.input-lg {
 .myinfo{
 	position:relative;left:50%; width:360px; margin-left:-180px;
 	}
-#skill_sm{
-	display:none;
-	}
-#skill_lg{
-	display:block;
+.myinfo p{
+	text-align:left;line-height:25px; color:#c7f0e1 !important;
 	}
 #serlist_sm{
 	  display:none;
@@ -6098,7 +6092,7 @@ td.visible-lg {
     display: table-cell !important;
   }
   .bannerpic { display:none; }
-  .bannerlist, #guanbanner h2, #guanbanner h1, #guanbanner p 　{ text-align:center; }
+  
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
