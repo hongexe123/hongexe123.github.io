@@ -1,15 +1,7 @@
-
 $(document).ready(function() {
 
 
-
-
-
-
-//初始化函数 
-
-
-
+/*背景滚动函数*/
 (function() {
   $.fn.backgroundMove = function(option) {
     var defaults = {
@@ -49,6 +41,24 @@ $(document).ready(function() {
     })
   }
 })($)
+
+
+/*open pop*/
+$(".showmore").click(function(){
+		$("#ifr").height($(window).height()-50).attr("src",$(this).data("href"));
+		$("#overlay").fadeIn();
+		$("#newsContent").css({"height":parseInt($(window).height()),"top":"0"});
+		$("#newsContent").animate({
+            right: '500px',
+        }, "slow");	
+		return false;
+	});
+	$('.close-btn').click(function(){
+		$('#newsContent').animate({
+            right: '-800px',
+        }, "slow");	
+		$("#overlay").fadeOut();
+	});
 
 
 })
