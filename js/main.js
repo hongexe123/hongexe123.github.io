@@ -93,39 +93,6 @@ window.onresize = function() {
 
   $('.goNext').css('top', $(window).height() - 100 + 'px');
 };
-/*$(window).resize(function() {
-  $('.serlist').css({
-    position: 'absolute',
-    margin: '-50px 0 0 0',
-    left: ($(window).width() - $('.serlist').outerWidth()) / 2,
-    top: ($(window).height() - $('.serlist').outerHeight()) / 2 + $(document).scrollTop()
-  });
-  $('.steplist').css({
-    position: 'absolute',
-    margin: '-50px 0 0 0',
-    left: ($(window).width() - $('.steplist').outerWidth()) / 2,
-    top: ($(window).height() - $('.steplist').outerHeight()) / 2 + $(document).scrollTop()
-  });
-  $('.worklist').css({
-    position: 'absolute',
-    margin: '-50px 0 0 0',
-    left: ($(window).width() - $('.worklist').outerWidth()) / 2,
-    top: ($(window).height() - $('.worklist').outerHeight()) / 2 + $(document).scrollTop()
-  });
-  $('.bannerlist').css({
-    position: 'absolute',
-    margin: '-50px 0 0 0',
-    left: ($(window).width() - $('.bannerlist').outerWidth()) / 2,
-    top: ($(window).height() - $('.bannerlist').outerHeight()) / 2 + $(document).scrollTop()
-  });
-  $('.bannerpic').css({
-    position: 'absolute',
-    margin: '-30px 0 0 0',
-    right: ($(window).width() - $('.bannerlist').outerWidth()) / 2,
-    top: ($(window).height() - $('.bannerlist').outerHeight()) / 2 + $(document).scrollTop()
-  });
-
-});*/
 //初始化函数 
 $(window).resize();
 var $f = true;
