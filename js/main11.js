@@ -48,15 +48,11 @@ $(".showmore").click(function(){
 		$("#ifr").height($(window).height()-50).attr("src",$(this).data("href"));
 		$("#overlay").fadeIn();
 		$("#newsContent").css({"height":parseInt($(window).height()),"top":"0"});
-		$("#newsContent").animate({
-            right: '500px',
-        }, "slow");	
+		$("#newsContent").fadeIn();
 		return false;
 	});
 	$('.close-btn').click(function(){
-		$('#newsContent').animate({
-            right: '-800px',
-        }, "slow");	
+		$('#newsContent').fadeOut();
 		$("#overlay").fadeOut();
 	});
 
