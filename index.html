@@ -29,10 +29,10 @@
       <div class="section" id="guanbanner">
     <div class="animation-container">
           <div id="indexgs">
-        <div id="indexg0"> <img src="img/march2.png" width="219" height="525"/></div>
-        <div id="indexg1"> <img src="img/march3.png" width="400" height="151"/></div>
-        <div id="indexg2"> <img src="img/march1.png" width="200" height="575"/></div>
-        <div id="indexg3"> <img src="img/march4.png" width="200" height="405"/></div>
+        <div id="indexg0" data-depth="0.40" class="layer"> <img src="img/march2.png" width="147" height="145"/></div>
+        <div id="indexg1" data-depth="0.80" class="layer"> <img src="img/march3.png" width="88" height="87"/></div>
+        <div id="indexg2" data-depth="0.60" class="layer"> <img src="img/march1.png" width="200" height="193"/></div>
+        <div id="indexg3" data-depth="0.90" class="layer"> <img src="img/march4.png" width="121" height="123"/></div>
       </div>
           <div class="march"><img src="img/march.png" width="900" height="887" ></div>
         </div>
@@ -129,7 +129,7 @@
                   <div class="sercol four">
                 <div class="sercon">
                       <p>作品杂货铺</p>
-                      <a href="javascript:void(0);">点击查看<em>+</em></a> </div>
+                      <a href="Inpage/other.html" data-href="Inpage/other.html" class="showmore">点击查看<em>+</em></a> </div>
               </div>
                 </div>
           </div>
@@ -253,12 +253,13 @@
 <div class="goNext"></div>
 <div id="newsContent">
 		<a class="close-btn" href="javascript:;"> </a>
-		<iframe src="about:blank" width="800" height="600" id="ifr"></iframe>
+		<iframe src="about:blank"  id="ifr"></iframe>
 </div>
 <div id="overlay"></div>
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/easyBackground-min.js"></script> 
 <script src="js/main11.js"></script> 
+<script type="text/javascript" src="js/jquery.parallax.js"></script> 
 <script type="text/javascript" src="js/npage.js"></script> 
 <script type="text/javascript" language="javascript">
       $(function() {
@@ -311,6 +312,8 @@
 		$('#workss').easyBackground({
 		  wrapNeighbours: true
 		});
+
+$('#indexgs').parallax();
 
       });
     </script>

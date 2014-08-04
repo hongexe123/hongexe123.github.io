@@ -82,27 +82,27 @@
 
 #indexgs {
 	width: 100%;
-	height: 508px;
+	height: 100%;
 	position:absolute;
 }
-#indexg2 {
+#indexg2 img{
 	right:180px;
-	top: 30px;
+	bottom: 120px;
 	position: absolute;
 }
-#indexg1 {
-	left: 50px;
-	top: 0px;
+#indexg1 img{
+	left: 350px;
+	top: 60px;
 	position: absolute
 }
-#indexg0 {
-	left: 50px;
-	top: 0px;
+#indexg0 img{
+	left: 160px;
+	bottom: 200px;
 	position: absolute;
 }
-#indexg3 {
+#indexg3 img{
 	right: 400px;
-	top: 0px;
+	top: 270px;
 	position: absolute;
 }
 

@@ -56,5 +56,4 @@ $(".showmore").click(function(){
 		$("#overlay").fadeOut();
 	});
 
-
 })

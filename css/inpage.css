@@ -16,7 +16,6 @@ body {
 	font-size: 14px;
 	color:#888;
 	line-height:25px;
-	height:3000px;
 }
 a{ 
 color:#282828;
@@ -51,7 +50,8 @@ h1{
 	position:absolute;
 	width:100px;
 	height:38px;
-	text-align:center;
+	text-align:left;
+	padding-left:10px;
 	padding-top:12px;
 	border-bottom:1px solid #282828;
 	}
