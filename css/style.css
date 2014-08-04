@@ -405,49 +405,23 @@
    全屏
    ========================================================================== */
 
-.goNext {
+.goNext{
+	position:fixed;
+	width:134px;
+	height:44px;
+	bottom:20px;
+	left:50%;
 	margin-left:-67px;
-	width:134px;
-	height:70px;
-	position:absolute;
-	left:50%;
-	z-index:50;
-	cursor:pointer;
-	-webkit-animation:yitesc 2s ease-in infinite;
+	animation:yitesc 1s linear infinite;
+    -moz-animation: yitesc 1s linear infinite;
+    -o-animation: yitesc 1s linear infinite;
+	-webkit-animation:yitesc 1s linear infinite;
+	background:url(../images/ynext.png) no-repeat;;
 }
-.goNext div {
-	width:134px;
-	height:42px;
-	padding-bottom:20px;
-	background:url('../images/ynext.png') no-repeat 50% 50%;
-}
-@media (max-width: 767px) {
-	.goNext {
-	margin-left:-34px;
-	width:67px;
-	height:35px;
-	position:absolute;
-	left:50%;
-	z-index:50;
-	cursor:pointer;
-	-webkit-animation:yitesc 2s ease-in infinite;
-}
-.goNext div {
-	width:67px;
-	height:21px;
-	padding-bottom:10px;
-	background:url('../images/ynext1.png') no-repeat 50% 50%;
-}
-	}
+
 @-webkit-keyframes yitesc {
-	0% { margin-top:0px; }
-	40% { margin-top:30px; }
-	50% { margin-top:15px; }
-	60% { margin-top:30px; }
-	70% { margin-top:25px; }
-	80% { margin-top:30px; }
-	90% { margin-top:30px; }
-	100% { margin-top:30px;}
+	0% { bottom:20px; }
+	100% { bottom:40px;}
 }
 
 
