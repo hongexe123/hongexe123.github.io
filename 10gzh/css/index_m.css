@@ -12,6 +12,6 @@ body, html {background:#f5f5f5;text-align: left;height: 100%;width: 100%; font-s
 .gzh_left img{ border:1px solid #b1b1b1; margin:10px;}
 .clearfloat{ clear:both;}
 .gzh_right{ float:left; width:460px;}
-.gzh_right h1{ font-size:16px; color:#76c73b;}
-.gzh_right p{ font-size:13px; color:#5b5b5b; margin-bottom:10px;}
+.gzh_right h1{ font-size:20px; color:#76c73b;}
+.gzh_right p{ font-size:16px; color:#5b5b5b; margin-bottom:10px;}
 .gzh_gz{ display:block; position:absolute; top:50%; right:15px; width:52px; height:19px; background:url(../images/add.png); margin-top:-10px;}
