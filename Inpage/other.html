@@ -9,7 +9,8 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-		$("body").niceScroll({
+$("#contentwrap").css({"height":parseInt($(window).height()-40),"top":"0"});
+		$("#contentwrap").niceScroll({
 			scrollspeed:80,
 			cursorcolor:"#379f7a",
 			cursorborderradius:4,
@@ -23,10 +24,12 @@ $(document).ready(function(){
 </head>
 
 <body style="text-align:center; padding-left:20px;">
+<div id="contentwrap">
 <img src="workpic/qt1.jpg" width="850" height="1679" />
 <img src="workpic/qt2.jpg" width="850" height="1778" />
 <img src="workpic/qt2aa.jpg" width="800" height="576" />
 <img src="workpic/qt2a.jpg" width="800" height="576" />
 <img src="workpic/qt3.jpg" width="800" height="2460" />
+</div>
 </body>
 </html>

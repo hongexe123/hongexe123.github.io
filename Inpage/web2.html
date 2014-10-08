@@ -9,7 +9,8 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-		$("body").niceScroll({
+$("#contentwrap").css({"height":parseInt($(window).height()-40),"top":"0"});
+		$("#contentwrap").niceScroll({
 			scrollspeed:80,
 			cursorcolor:"#379f7a",
 			cursorborderradius:4,
@@ -23,6 +24,7 @@ $(document).ready(function(){
 </head>
 
 <body>
+<div id="contentwrap">
 <div class="menu">
 <ul>
 <li><a href="web1.html">Web作品一</a></li>
@@ -35,7 +37,6 @@ $(document).ready(function(){
 <img src="workpic/w3.jpg" width="600" height="292" />
 <div class="describle">
 <h1>Wanli万丽服装网</h1><br />
-<strong>本地网址：</strong><a href="http://www.wanli.cn">点击跳转到该网站</a><br />
 <strong>上线网址：</strong><a href="http://www.wanli.cn" target="_new">www.wanli.cn</a><br />
 <strong>日期：</strong>2012/10——2013/1<br />
 <strong>职务/角色：</strong>网页制作<br />
@@ -46,6 +47,7 @@ $(document).ready(function(){
 <img src="workpic/w1.jpg" width="850" height="1167" />
 
 
+</div>
 </div>
 </body>
 </html>

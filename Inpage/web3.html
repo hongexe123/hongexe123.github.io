@@ -9,7 +9,8 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-		$("body").niceScroll({
+$("#contentwrap").css({"height":parseInt($(window).height()-40),"top":"0"});
+		$("#contentwrap").niceScroll({
 			scrollspeed:80,
 			cursorcolor:"#379f7a",
 			cursorborderradius:4,
@@ -23,6 +24,7 @@ $(document).ready(function(){
 </head>
 
 <body>
+<div id="contentwrap">
 <div class="menu">
 <ul>
 <li><a href="web1.html">Web作品一</a></li>
@@ -35,8 +37,7 @@ $(document).ready(function(){
 <img src="workpic/t3.jpg" width="600" height="292" />
 <div class="describle">
 <h1>"天天贷"投融资信息服务平台开发</h1><br />
-<strong>本地网址：</strong><a href="http://www.ttdai.com">点击跳转到该网站</a><br />
-<strong>上线网址：</strong><a href="http://www.ttdai.com" target="_new">www.ttdai.com</a>（网站上线后客户有改页面效果，我的最终版本建议浏览本地网址）<br />
+<strong>上线网址：</strong><a href="http://www.ttdai.com" target="_new">www.ttdai.com</a><br />
 <strong>日期：</strong>2012/10——2013/1<br />
 <strong>职务/角色：</strong>网页设计、前端开发<br />
 <strong>项目职责：</strong>根据需求方提供的功能清单完成网站规划，分析网站用户以及同类网站，确定信息架构，完成网页设计，前端实现（div/css/jQuery）
@@ -47,6 +48,7 @@ $(document).ready(function(){
 <img src="workpic/t2.jpg" width="850" height="1120" />
 
 
+</div>
 </div>
 </body>
 </html>

@@ -9,7 +9,9 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-		$("body").niceScroll({
+$("#contentwrap").css({"height":parseInt($(window).height()-40),"top":"0"});
+
+		$("#contentwrap").niceScroll({
 			scrollspeed:80,
 			cursorcolor:"#379f7a",
 			cursorborderradius:4,
@@ -23,6 +25,7 @@ $(document).ready(function(){
 </head>
 
 <body>
+<div id="contentwrap">
 <div class="menu">
 <ul>
 <li><a href="app1.html">App作品一</a></li>
@@ -44,6 +47,7 @@ $(document).ready(function(){
 <img src="workpic/ring4.jpg" width="850" height="638" />
 <img src="workpic/ring2.jpg" width="850" height="638" />
 
+</div>
 </div>
 </body>
 </html>

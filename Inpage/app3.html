@@ -8,8 +8,10 @@
 <script type="text/javascript" src="../js/jquery.nicescroll.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
+	
+	$("#contentwrap").css({"height":parseInt($(window).height()-40),"top":"0"});
 
-		$("body").niceScroll({
+		$("#contentwrap").niceScroll({
 			scrollspeed:80,
 			cursorcolor:"#379f7a",
 			cursorborderradius:4,
@@ -22,6 +24,7 @@ $(document).ready(function(){
 
 </head>
 <body>
+<div id="contentwrap">
 <div class="menu">
 <ul>
 <li><a href="app1.html">App作品一</a></li>
@@ -40,6 +43,7 @@ $(document).ready(function(){
 <div style="clear:both; height:50px;"></div>
 <div style="font-size:18px; text-align:center; height:100px;">已上线：<a href="https://itunes.apple.com/us/app/kill-ants-alarm-clock/id614046082?ls=1&mt=8" target="_new">app store下载地址</a></div>
 
+</div>
 </div>
 </body>
 </html>

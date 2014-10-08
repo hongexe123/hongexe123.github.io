@@ -9,7 +9,9 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-		$("body").niceScroll({
+$("#contentwrap").css({"height":parseInt($(window).height()-40),"top":"0"});
+
+		$("#contentwrap").niceScroll({
 			scrollspeed:80,
 			cursorcolor:"#379f7a",
 			cursorborderradius:4,
@@ -22,6 +24,7 @@ $(document).ready(function(){
 
 </head>
 <body>
+<div id="contentwrap">
 <div class="menu">
 <ul>
 <li><a href="web1.html">Web作品一</a></li>
@@ -42,6 +45,7 @@ $(document).ready(function(){
 <div style="clear:both; height:50px;"></div>
 
 
+</div>
 </div>
 </body>
 </html>

@@ -9,7 +9,8 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-		$("body").niceScroll({
+$("#contentwrap").css({"height":parseInt($(window).height()-40),"top":"0"});
+		$("#contentwrap").niceScroll({
 			scrollspeed:80,
 			cursorcolor:"#379f7a",
 			cursorborderradius:4,
@@ -23,6 +24,7 @@ $(document).ready(function(){
 </head>
 
 <body>
+<div id="contentwrap">
 <div class="menu">
 <ul>
 <li><a href="web1.html">Web作品一</a></li>
@@ -40,6 +42,7 @@ $(document).ready(function(){
   <area shape="rect" coords="264,1022,597,1214" href="http://wj.163.com/2014/ceshi/" target="_new" />
   <area shape="rect" coords="262,1506,597,1695" href="http://wj.163.com/index.html" target="_new" />
 </map>
+</div>
 </div>
 </body>
 </html>

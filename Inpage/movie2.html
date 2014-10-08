@@ -9,7 +9,9 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-		$("body").niceScroll({
+$("#contentwrap").css({"height":parseInt($(window).height()-40),"top":"0"});
+
+		$("#contentwrap").niceScroll({
 			scrollspeed:80,
 			cursorcolor:"#379f7a",
 			cursorborderradius:4,
@@ -22,6 +24,7 @@ $(document).ready(function(){
 
 </head>
 <body>
+<div id="contentwrap">
 <div class="menu">
 <ul>
 <li><a href="movie1.html">影视作品一</a></li>
@@ -37,6 +40,7 @@ $(document).ready(function(){
 <strong>项目职责：</strong>负责前期构思讨论确定拍摄计划，视频剪辑，后期特效<br />
 </div>
 
+</div>
 </div>
 </body>
 </html>

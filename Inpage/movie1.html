@@ -9,7 +9,9 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-		$("body").niceScroll({
+$("#contentwrap").css({"height":parseInt($(window).height()-40),"top":"0"});
+
+		$("#contentwrap").niceScroll({
 			scrollspeed:80,
 			cursorcolor:"#379f7a",
 			cursorborderradius:4,
@@ -22,6 +24,7 @@ $(document).ready(function(){
 
 </head>
 <body>
+<div id="contentwrap">
 <div class="menu">
 <ul>
 <li><a class="click" href="movie1.html">影视作品一</a></li>
@@ -41,6 +44,7 @@ $(document).ready(function(){
 <div style="clear:both; height:50px;"></div>
 <div style="font-size:18px; text-align:center; height:100px;">"我们是靠手来记忆的。"——一位传统手工艺人这样说过<br /></div>
 
+</div>
 </div>
 </body>
 </html>

@@ -75,3 +75,8 @@ img.toppic{
 .content{
 	margin-left:140px;
 }
+
+#contentwrap{
+	position:relative;
+	height:650px;
+	}
