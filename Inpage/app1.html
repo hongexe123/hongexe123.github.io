@@ -8,8 +8,19 @@
 <script type="text/javascript" src="../js/jquery.nicescroll.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-
-$("#contentwrap").css({"height":parseInt($(window).height()-40),"top":"0"});
+function is_iPad(){  
+    var ua = navigator.userAgent.toLowerCase();  
+    if(ua.match(/iPad/i)=="ipad") {  
+        return true;  
+    } else {  
+        return false;  
+    }  
+}
+if(is_iPad()){
+$("#contentwrap").css({"height":"600px","top":"0"});
+} else {
+$("#contentwrap").css({"height":parseInt($(window).height()-40),"top":"0"});	
+	}
 
 		$("#contentwrap").niceScroll({
 			scrollspeed:80,
